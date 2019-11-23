@@ -10,7 +10,7 @@ public class Notifier {
 		
 		User user1 = new User("Prashant");
 		User user2 = new User("Rohit");
-		User user3 = new User("Tarun");
+		User user3 = new User("Tarunn");
 		User user4 = new User("Waqas");
 		
 		ChMan.Register(redDress, user1);
