@@ -1,5 +1,6 @@
 package com.mediator;
 
 public interface IMediator {
-	public void addUser(User user);
+	public void addUser(Account user);
+	public void sendProm(String code);
 }

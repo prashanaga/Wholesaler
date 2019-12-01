@@ -3,25 +3,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mediator implements IMediator {
-	private List<User> users;
+	private List<Account> users;
 	
 	public Mediator() {
-		this.users = new ArrayList<User>();
+		this.users = new ArrayList<Account>();
 	}
 	
-	public void addUser(User user){
+	public void addUser(Account user){
 		this.users.add(user);
 	}
 	
 	
 	public void sendProm(String code) {
-		for(User u : this.users){
+		for(Account u : this.users){
 			if(u.getPromStatus() == 1) {
-				u.receive("Promotion code is: "+code);
+				u.receiveUpdate("Promotion code is: "+code);
 			}
 			else {
-				u.receive("Didn't register for promotions!");
+				u.receiveUpdate("Didn't register for promotions!");
 			}
 		}
 	}
+
 }
