@@ -5,6 +5,12 @@ public class Account {
 	protected int reg_status;
 	protected String promCode;
 	
+	public void setId() {
+		id = 1;
+	}
+	public int getId() {
+		return id;
+	}
 	public void promUpdate(int reg_status) {
 		this.reg_status = reg_status;	
 	}

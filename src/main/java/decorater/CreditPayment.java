@@ -1,9 +1,9 @@
 package decorater;
 
-public class orderAmount2 extends discountDecorater {
+public class CreditPayment extends discountDecorater {
 	
 
-	   public orderAmount2(discount decorateddiscount) {
+	   public CreditPayment(discount decorateddiscount) {
 	      super(decorateddiscount);		
 	   }
 
