@@ -14,11 +14,11 @@ import com.spring.series.mvc.rest.model.Login;
 public class LoginController {
 	@RequestMapping( value="/login", method = RequestMethod.GET)
 	  public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
-	    ModelAndView mav = new ModelAndView("login");
+	    ModelAndView mav = new ModelAndView("login");  //webpage
 	   
 	    System.out.println("*****************************************************************************");
 	   // mav.addObject("user", new User());
-	    mav.addObject("login", new Login());
+	    mav.addObject("login", new Login());  //model object
 	    return mav;
 	  }
 }
